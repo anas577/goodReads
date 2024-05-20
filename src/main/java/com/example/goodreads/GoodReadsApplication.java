@@ -30,8 +30,8 @@ public class GoodReadsApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(){
 		return args -> {
-			User user = new User(null, "user","user@gmail.com","pdpUrl","123", Role.USER,null,null,null);
-			userManager.addUser(user);
+			//User user = new User(null, "user","user@gmail.com","pdpUrl","123", Role.USER,null,null,null);
+			//userManager.addUser(user);
 			//bookManager.addBook(new Book(null,"The Great Gatsby","Great book","url://greatgatsby.com",new Date(),4.3,200,null,null,null,null));
 		};
 	}

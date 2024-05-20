@@ -20,12 +20,12 @@ public class CommentContoller {
         return commentService.getAllComments();
     }
 
-   @GetMapping
+   @PutMapping
     public Comment updateComment( @RequestBody Comment comment) {
         return commentService.updateComment(comment);
     }
 
-    @GetMapping
+    @PostMapping
     public Comment addComment( @RequestBody Comment comment) {
         return commentService.addComment(comment);
     }
@@ -34,7 +34,7 @@ public class CommentContoller {
         return commentService.getCommentById(id);
     }
 
-    @GetMapping("/{id}")
+    @DeleteMapping("/{id}")
     public void deleteCommentById(@PathVariable int id) {
          commentService.deleteCommentById(id);
     }

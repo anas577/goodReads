@@ -40,7 +40,7 @@ public class RatingController {
 //        return ratingService.getAverageRatingByBookId(id);
 //    }
 
-    @GetMapping("/{id}")
+    @GetMapping("ratingCount/{id}")
     public int getRatingCountByBookId(@PathVariable int id) {
         return ratingService.getRatingCountByBookId(id);
     }
